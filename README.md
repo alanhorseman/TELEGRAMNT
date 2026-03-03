@@ -1,3 +1,7 @@
+Aclaracion: el proyecto esta incompleto en todo aspecto. Lamentablemente me retrase en unas 7 clases. Ya vi todas las clases pero tengo que implementar todo lo visto y que cumpla con la consigna. Hago la entrega del proyecto de todas formas e ire trabajando y actualizando el repo.
+
+
+
 El trabajo final de frontend consistirá en una aplicación web con los siguientes lineamientos:
 
 

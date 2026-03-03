@@ -4,6 +4,7 @@ import { useParams } from "react-router";
 import { ContactsContext } from "../../Context/ContactsContext";
 import Messages from "../../Components/Messages/Messages";
 import NewMessageForm from "../../Components/NewMessageForm/NewMessageForm";
+import './ContactScreen.css'
 
 export default function ContactScreen() {
   const { contacts } = useContext(ContactsContext);
@@ -12,14 +13,16 @@ export default function ContactScreen() {
     (contact) => Number(contact.id) === Number(contact_id),
   );
   return (
-    <div>
-      <ContactSidebar />
+    <div className="contactScreen-container">
+      <div className="contactScreen-contactSidebar">
+        <ContactSidebar />
+      </div>
       {!contact_selected ? (
         <div>
           <h1>El contacto no existe</h1>
         </div>
       ) : (
-        <div>
+        <div className="contactScreen-chat">
           <h1>{contact_selected.name}</h1>
           <Messages contact_selected={contact_selected} />
           <NewMessageForm contact_id={contact_id} />

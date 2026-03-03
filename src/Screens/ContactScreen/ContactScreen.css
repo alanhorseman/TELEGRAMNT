@@ -1,0 +1,11 @@
+.contactScreen-container{
+  display: flex;
+}
+
+.contactScreen-contactSidebar{
+  width: 20%;
+}
+
+.contactScreen-chat{
+  padding: 0px 100px;
+}
