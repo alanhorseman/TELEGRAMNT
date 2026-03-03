@@ -8,14 +8,12 @@ function App() {
 
   return (
     <div>
-      <BrowserRouter>
-        <ContactsContextProvider>
-          <Routes>
-            <Route path='/' element={<HomeScreen/>}/>
-            <Route path='/contact/:contact_id' element={<ContactScreen/>}/>
-          </Routes>
-        </ContactsContextProvider>
-      </BrowserRouter>
+      <ContactsContextProvider>
+        <Routes>
+          <Route path='/' element={<HomeScreen/>}/>
+          <Route path='/contact/:contact_id' element={<ContactScreen/>}/>
+        </Routes>
+      </ContactsContextProvider>
     </div>
   )
 }

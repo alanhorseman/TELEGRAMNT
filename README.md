@@ -1,16 +1,42 @@
-# React + Vite
+El trabajo final de frontend consistirá en una aplicación web con los siguientes lineamientos:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Despliegue en vercel (o hosting de elección) funcional
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Código subido en github
 
-## React Compiler
+Readme.md con una descripción del desafío elegido, librerías usadas y dificultades presentadas a la hora de resolverse (opcional)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+La página debe ser totalmente responsiva de las medidas 320px a 2000px
 
-## Expanding the ESLint configuration
+La página debe tener estilos accesibles acordes a los vistos en clase (fondos claros con letras claras se considera inaccesible)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+La página debe estar desarrollada en React.
+
+La página debe contar con el uso de estados 
+
+Se valora el uso de contextos.
+
+El enrutamiento de la página debe ser desarrollado con react-router-dom
+
+Debe contar con el uso de al menos 1 formulario.
+
+Deben usarse componentes 
+
+Se debe contar con al menos 2 páginas en el flujo de la aplicación y debe usarse al menos en una los parámetros de búsqueda de react-router-dom
+
+Se valora la calidad de código siguiendo los principios de la programación vistos en clase (DRY, YAGNI, KISS)
+
+Se pueden usar diseños o páginas ya creadas de guía para poder despreocuparse de los aspectos estéticos de la página desarrollada
+
+
+
+Cualquier aplicación web que conste con estos requerimientos será aprobada, el tema, estilos y funcionalidades son de libre elección o pueden seguir el tema propuesto a continuación.
+
+
+
+Se recomienda el desarrollo de la aplicación de mensajeria simil a whatsapp.
+
+
+
+El formato de entrega es el link de github y link de despliegue realizado.
