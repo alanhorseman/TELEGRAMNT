@@ -22,7 +22,7 @@ export default function ContactScreen() {
               {contact_selected.name}
             </h1>
             <Messages contact_selected={contact_selected}/>
-            <NewMessageForm/>
+            <NewMessageForm contact_id={contact_id}/>
           </div>
       }
     </div>
