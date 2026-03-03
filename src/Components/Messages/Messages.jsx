@@ -1,6 +1,4 @@
-import React from "react";
-
-export default function Messages({contact_selected}) {
+export default function Messages({ contact_selected }) {
   return (
     <div>
       {contact_selected.messages.map((m) => {

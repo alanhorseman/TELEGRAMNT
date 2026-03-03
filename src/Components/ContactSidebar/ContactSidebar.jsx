@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { ContactsContext } from '../../Context/ContactsContext'
 import { Link } from 'react-router'
 
