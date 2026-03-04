@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
 
-export default function ChatHeader() {
+export default function ChatHeader({ contact_selected }) {
   return (
     <div>
-      /// este componente recibira el contact_selected y muestra la foto y el nombre arriba del chat
+      <img src={contact_selected.profile_picture} alt={contact_selected.name} />
+      <h3>{contact_selected.name}</h3>
     </div>
-  )
+  );
 }
