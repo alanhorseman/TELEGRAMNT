@@ -42,7 +42,7 @@ const contacts = [
         is_read: false,
       }
     ]
-  }
+  },
 ]
 
 export default contacts;

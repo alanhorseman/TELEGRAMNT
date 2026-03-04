@@ -1,9 +1,9 @@
-import ContactSidebar from '../../Components/ContactSidebar/ContactSidebar'
+import ChatEmptyState from "../../Components/ChatEmptyState/ChatEmptyState"
 
 export default function HomeScreen() {
   return (
     <div>
-      <ContactSidebar/>
+      <ChatEmptyState />
     </div>
   )
 }

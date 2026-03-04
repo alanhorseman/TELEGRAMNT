@@ -1,10 +1,9 @@
+import "./ContactScreen.css";
 import { useContext } from "react";
-import ContactSidebar from "../../Components/ContactSidebar/ContactSidebar";
 import { useParams } from "react-router";
-import { ContactsContext } from "../../Context/ContactsContext";
 import Messages from "../../Components/Messages/Messages";
+import { ContactsContext } from "../../Context/ContactsContext";
 import NewMessageForm from "../../Components/NewMessageForm/NewMessageForm";
-import './ContactScreen.css'
 
 export default function ContactScreen() {
   const { contacts } = useContext(ContactsContext);
@@ -14,9 +13,6 @@ export default function ContactScreen() {
   );
   return (
     <div className="contactScreen-container">
-      <div className="contactScreen-contactSidebar">
-        <ContactSidebar />
-      </div>
       {!contact_selected ? (
         <div>
           <h1>El contacto no existe</h1>

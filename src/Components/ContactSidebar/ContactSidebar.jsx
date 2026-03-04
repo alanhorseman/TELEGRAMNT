@@ -1,27 +1,32 @@
-import { useContext } from 'react'
-import { ContactsContext } from '../../Context/ContactsContext'
-import { Link } from 'react-router'
+import { useContext } from "react";
+import SearchBar from "../SearchBar/SearchBar";
+import { useSearchParams } from "react-router";
+import ContactItem from "../ContactItem/ContactItem";
+import SidebarHeader from "../SidebarHeader/SidebarHeader";
+import { ContactsContext } from "../../Context/ContactsContext";
+
 
 export default function ContactSidebar() {
-  const { contacts } = useContext(ContactsContext)
+  const { contacts } = useContext(ContactsContext);
+  const [searchParams] = useSearchParams();
+
+  const query = searchParams.get('q') || '';
+  const filtered = contacts.filter((contact) => {
+    return contact.name.toLowerCase().includes(query.toLowerCase());
+  });
+  
   return (
     <div>
       <h2>Telegram'nt</h2>
+      <SidebarHeader />
+      <SearchBar />
       <div>
         {
-          contacts.map((contact) => {
-            return (
-              <Link to={`/contact/${contact.id}`} key={contact.id}>
-                <img src={contact.profile_picture} alt={contact.name} style={{width: '200px'}} />
-                <h3>{contact.name}</h3>
-                <span>{contact.last_time_connection}</span>
-                <br />
-                <hr />
-              </Link>
-            )
+          filtered.map((contact) => {
+            return <ContactItem key={contact.id} contact={contact} />
           })
         }
       </div>
     </div>
-  )
+  );
 }

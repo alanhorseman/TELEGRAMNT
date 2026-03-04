@@ -12,15 +12,21 @@ const ContactsContextProvider = ({ children }) => {
 
   function addNewMessage(contact_id, new_message) {
     setContactsState((current) => {
-      return [...current].map((contact) => {
+      return current.map((contact) => {
         if (Number(contact.id) === Number(contact_id)) {
-          contact.messages.push({
-            id: contact.messages.length + 1,
-            text: new_message,
-            send_by_me: true,
-            create_at: new Date().toDateString(),
-            is_read: false,
-          });
+          return {
+            ...contact,
+            messages: [
+              ...contact.messages,
+              {
+                id: contact.messages.length + 1,
+                text: new_message,
+                send_by_me: true,
+                create_at: new Date().toISOString(),
+                is_read: false,
+              },
+            ],
+          };
         }
         return contact;
       });
