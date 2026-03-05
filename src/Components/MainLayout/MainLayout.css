@@ -1,0 +1,13 @@
+.asideMain-container{
+  display: flex;
+}
+
+.asideContainer{
+  display: flex;
+  width: 565px;
+}
+
+.aside-NavBtn{
+  width: 64px;
+
+}

@@ -1,0 +1,18 @@
+.aside-navIconContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100vh;
+  padding: 15px 0px;
+}
+
+.iconsColumns{
+  display: flex;
+  flex-direction: column;
+}
+
+.iconsColumns button{
+  width: max-content;
+}

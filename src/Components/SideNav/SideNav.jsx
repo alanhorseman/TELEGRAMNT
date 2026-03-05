@@ -1,18 +1,23 @@
-import React from 'react'
 import ChatIcon from '../Icons/ChatIcon/ChatIcon'
+import StatusIcon from '../Icons/StatusIcon/StatusIcon'
+import ChannelsIcon from '../Icons/ChannelsIcon/ChannelsIcon'
+import CommunityIcon from '../Icons/CommunityIcon/CommunityIcon'
+import MediaIcon from '../Icons/MediaIcon/MediaIcon'
+import SettingsIcon from '../Icons/SettingsIcon/SettingsIcon'
+import './SideNav.css'
 
 export default function SideNav() {
   return (
-    <nav>
-      <div>
+    <nav className='aside-navIconContainer'>
+      <div className='navIcon-top iconsColumns'>
         <button><ChatIcon /></button>
-        <button>//StatusIcon</button>
-        //faltan 2 mas
+        <button><StatusIcon /></button>
+        <button><ChannelsIcon /></button>
+        <button><CommunityIcon /></button>
       </div>
-      <div>
-        //button de multimedia
-        <button>//SettingsIcon</button>
-        //img con la foto de perfil
+      <div className='navIcon-bottom iconsColumns'>
+        <button><MediaIcon /></button>
+        <button><SettingsIcon /></button>
       </div>
     </nav>
   )

@@ -3,7 +3,8 @@ const contacts = [
     id: 1,
     name: 'Carla',
     last_time_connection: 'Hace 2 horas',
-    profile_picture: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDJ5vtsJwnQQHGzSkAj0WbgZBH16X4MkrNwg&s',
+    profile_picture: 'https://ih1.redbubble.net/image.5788381704.7150/st,small,507x507-pad,600x600,f8f8f8.jpg',
+    
     messages: [
       {
         id: 1,
@@ -25,7 +26,7 @@ const contacts = [
     id: 2,
     name: 'Alan',
     last_time_connection: 'Hace 1 horas',
-    profile_picture: 'https://ih1.redbubble.net/image.5788381704.7150/st,small,507x507-pad,600x600,f8f8f8.jpg',
+    profile_picture: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDJ5vtsJwnQQHGzSkAj0WbgZBH16X4MkrNwg&s',
     messages: [
       {
         id: 1,
