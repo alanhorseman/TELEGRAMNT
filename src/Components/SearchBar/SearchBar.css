@@ -1,5 +1,4 @@
 .searchBar-component{
-  /* padding: 0px 20px; */
   margin-bottom: 4px;
 }
 
@@ -24,4 +23,6 @@
 
   background-color: transparent;
   border: none;
+  outline: none;
+  color: white;
 }

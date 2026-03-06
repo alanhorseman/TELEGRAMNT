@@ -3,7 +3,11 @@
   display: flex;
   flex-direction: column;
 
-  padding: 0px 60px;
+  flex: 1;
+  padding: 20px 7%;
+
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .message{
@@ -11,7 +15,9 @@
   flex-direction: column;
 
   width: 100%;
+  margin-bottom: 4px;
 }
+
 
 .rigth-message{
   display: flex;
@@ -21,13 +27,22 @@
 }
 
 .left-message{
+  align-self: flex-start;
   background-color: #242626;
 }
 
 .bubble-message{
-  display: flex;
+  display: block;
   
-  width: max-content;
-  border-radius: 10px;
+  width: fit-content;
+  max-width: 65%;
+
+  border-radius: 8px;
+  margin-bottom: 2px;
   padding: 6px 7px 8px 9px;
+
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: pre-wrap;
 }
