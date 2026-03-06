@@ -1,0 +1,17 @@
+
+.chatHeader-container{
+  display: flex;
+
+  gap: 10px;
+}
+
+.chatHeader-container img{
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+}
+
+.chatHeader-infoContact{
+  display: flex;
+  flex-direction: column;
+}

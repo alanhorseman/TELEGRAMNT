@@ -1,10 +1,13 @@
-import React from "react";
+import './ChatHeader.css'
 
 export default function ChatHeader({ contact_selected }) {
   return (
-    <div>
+    <div className="chatHeader-container">
       <img src={contact_selected.profile_picture} alt={contact_selected.name} />
-      <h3>{contact_selected.name}</h3>
+      <div className='chatHeader-infoContact'>
+        <h3>{contact_selected.name}</h3>
+        <p>{contact_selected.last_time_connection}</p>
+      </div>
     </div>
   );
 }

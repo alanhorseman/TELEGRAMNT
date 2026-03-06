@@ -1,0 +1,18 @@
+
+
+.newMessage-inputContainer{
+  height: 40px;
+  padding: 6px;
+  margin: 0px 12px 12px 12px;
+
+  background-color: #242626;
+}
+
+.newMessage-inputForm{
+  border: none;
+  background-color: #242626;
+}
+
+.submitBtn{
+  display: none;
+}
