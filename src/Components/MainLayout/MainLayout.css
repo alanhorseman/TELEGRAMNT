@@ -2,7 +2,7 @@
   display: flex;
 
   height: 100vh;
-  background-color: #111b21;
+  background-color: #161717;
 }
 
 .aside-navBtn {
@@ -10,7 +10,7 @@
   flex-direction: column;
 
   flex: 0 0 64px;
-  background-color: #202c33;
+  background-color: #1D1E1E;
 }
 
 .aside-contacts {
@@ -21,7 +21,9 @@
   min-width: 300px;
   max-width: 565px;
 
-  background-color: #111b21;
+  padding: 0px 10px;
+
+  background-color: #161717;
 }
 
 .main {
@@ -29,6 +31,17 @@
   flex-direction: column;
   position: relative;
   flex: 1;
+
+  background-color: #161717;
+  border-left: 1px solid #2f3030;
+}
+
+.line-bottom{
+  margin: 10px auto;
   
-  background-color: #0b141a;
+  width: 92%;
+  height: 1px;
+  opacity: 0.6;
+
+  background-color: #2f3030;
 }

@@ -5,12 +5,11 @@ export default function ContactItem({ contact }) {
   
   return (
     <div className="contactInfo-container">
-      <Link to={`/contact/${contact.id}`}>
-        <img src={contact.profile_picture} alt={contact.name} />
+      <Link to={`/contact/${contact.id}`} className="contactInfo">
+        <div className="contactInfo-imgContainer">
+          <img src={contact.profile_picture} alt={contact.name} />
+        </div>
         <h3>{contact.name}</h3>
-        <span>{contact.last_time_connection}</span>
-        <br />
-        <hr />
       </Link>
     </div>
   );

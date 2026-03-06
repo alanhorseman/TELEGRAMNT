@@ -12,6 +12,7 @@ export default function MainLayout() {
 
       <aside className="aside-contacts">
         <ContactSidebar />
+        <div className="line-bottom"></div>
       </aside>
 
       <main className="main">
