@@ -1,0 +1,21 @@
+.sidebarHeader-container{
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 10px 20px;
+  color: white;
+}
+
+.sidebarHeader-iconsContainer{
+  display: flex;
+  color: white;
+}
+
+.sidebarHeader-Icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}

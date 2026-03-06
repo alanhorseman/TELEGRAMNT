@@ -1,0 +1,9 @@
+.contactSidebar-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebarHeader{
+  display: flex;
+  justify-content: space-between;
+}

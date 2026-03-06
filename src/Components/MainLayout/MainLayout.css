@@ -1,13 +1,34 @@
-.asideMain-container{
+.asideMain-container {
   display: flex;
+
+  height: 100vh;
+  background-color: #111b21;
 }
 
-.asideContainer{
+.aside-navBtn {
   display: flex;
-  width: 565px;
+  flex-direction: column;
+
+  flex: 0 0 64px;
+  background-color: #202c33;
 }
 
-.aside-NavBtn{
-  width: 64px;
+.aside-contacts {
+  display: flex;
+  flex-direction: column;
 
+  flex: 0 0 30vw;
+  min-width: 300px;
+  max-width: 565px;
+
+  background-color: #111b21;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 1;
+  
+  background-color: #0b141a;
 }

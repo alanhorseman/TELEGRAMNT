@@ -2,8 +2,8 @@ export default function MediaIcon() {
   return (
     <svg 
       viewBox="0 0 24 24" 
-      height="24" 
-      width="24" 
+      height="32" 
+      width="32" 
       preserveAspectRatio="xMidYMid meet" 
       fill="none"
     >

@@ -1,4 +1,6 @@
 import { useSearchParams } from "react-router"
+import SearchIcon from "../Icons/SearchIcon/SearchIcon";
+import './SearchBar.css'
 
 export default function SearchBar() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -15,8 +17,13 @@ export default function SearchBar() {
   }
 
   return (
-    <div>
-      <input type="text" placeholder="Buscar un chat..." value={query} onChange={handleChange} />
+    <div className="searchBar-component">
+      <div className="searchBar-container">
+        <div className="searchIcon">
+          <SearchIcon />
+        </div>
+        <input className="inputSearchBar" type="text" placeholder="Buscar un chat o iniciar uno nuevo" value={query} onChange={handleChange} />
+      </div>  
     </div>
   )
 }

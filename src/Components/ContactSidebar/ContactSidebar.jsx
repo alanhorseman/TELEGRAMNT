@@ -4,6 +4,7 @@ import { useSearchParams } from "react-router";
 import ContactItem from "../ContactItem/ContactItem";
 import SidebarHeader from "../SidebarHeader/SidebarHeader";
 import { ContactsContext } from "../../Context/ContactsContext";
+import './ContactSidebar.css'
 
 
 export default function ContactSidebar() {
@@ -16,9 +17,10 @@ export default function ContactSidebar() {
   });
   
   return (
-    <div>
-      <h2>Telegram'nt</h2>
-      <SidebarHeader />
+    <div className="contactSidebar-container">
+      <div className="sidebarHeader">
+        <SidebarHeader />
+      </div>
       <SearchBar />
       <div>
         {
