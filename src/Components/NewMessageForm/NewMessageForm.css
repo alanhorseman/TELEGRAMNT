@@ -1,16 +1,51 @@
-
+.newMessageForm-form{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
 
 .newMessage-inputContainer{
-  height: 40px;
-  padding: 6px;
+  display: flex;
+  align-items: center;
+
+  flex: 1;
+  height: 45px;
+  padding: 5px 15px;
   margin: 0px 12px 12px 12px;
+  border: 1px solid #242626;
+  border-radius: 20px;
 
   background-color: #242626;
 }
 
+.inputContainer-iconContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputContainer-iconContainer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+}
+
+.stickerIcon-container{
+  margin-right: 3px;
+}
+
 .newMessage-inputForm{
+  flex: 1;
+  margin-left: 5px;
+  outline: none;
   border: none;
-  background-color: #242626;
+  font-size: 15px;
+
+  background-color: transparent;
+  color: #d1d7db;
 }
 
 .submitBtn{

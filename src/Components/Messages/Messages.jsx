@@ -1,16 +1,16 @@
+import './Messages.css'
+
 export default function Messages({ contact_selected }) {
   return (
-    <div>
+    <div className='messages-container'>
       {contact_selected.messages.map((m) => {
         return (
-          <div key={m.id}>
+          <div key={m.id} className='message'>
             {m.send_by_me ? (
-              <h3>Enviado por Mi</h3>
+              <p className='rigth-message right-message bubble-message'>{m.text}</p>
             ) : (
-              <h3>Enviado por {contact_selected.name}</h3>
+              <p className='left-message bubble-message'>{m.text}</p>
             )}
-            <p>{m.text}</p>
-            <span>{m.create_at}</span>
           </div>
         );
       })}

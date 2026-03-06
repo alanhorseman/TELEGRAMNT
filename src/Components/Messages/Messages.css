@@ -1,0 +1,33 @@
+
+.messages-container{
+  display: flex;
+  flex-direction: column;
+
+  padding: 0px 60px;
+}
+
+.message{
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.rigth-message{
+  display: flex;
+  align-self: flex-end;
+
+  background-color: #154D36;
+}
+
+.left-message{
+  background-color: #242626;
+}
+
+.bubble-message{
+  display: flex;
+  
+  width: max-content;
+  border-radius: 10px;
+  padding: 6px 7px 8px 9px;
+}
