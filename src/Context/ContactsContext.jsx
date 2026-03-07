@@ -10,9 +10,11 @@ const ContactsContextProvider = ({ children }) => {
   const contacts = getContacts();
   const [contactsState, setContactsState] = useState(contacts);
 
+  const [contact_selected, setContact_selected] = useState(null);
+
   function addNewMessage(contact_id, new_message) {
-    setContactsState((current) => {
-      return current.map((contact) => {
+    setContactsState((currentContact_selected) => {
+      return currentContact_selected.map((contact) => {
         if (Number(contact.id) === Number(contact_id)) {
           return {
             ...contact,
@@ -36,6 +38,8 @@ const ContactsContextProvider = ({ children }) => {
   const provider_values = {
     contacts: contactsState,
     addNewMessage,
+    contact_selected,
+    setContact_selected,
   };
 
   return (
