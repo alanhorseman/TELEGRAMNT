@@ -1,5 +1,5 @@
 .searchBar-component{
-  margin-bottom: 4px;
+  margin-bottom: .25rem;
 }
 
 .searchBar-container{
@@ -12,14 +12,14 @@
 
 .searchIcon{
   display: flex;
-  padding: 0px 20px;
+  padding: 0rem 1.25rem;
 
   color: white;
 }
 
 .inputSearchBar{
   width: 100%;
-  height: 44px;
+  height: 2.75rem;
 
   background-color: transparent;
   border: none;

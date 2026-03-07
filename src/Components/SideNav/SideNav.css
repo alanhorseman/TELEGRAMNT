@@ -5,9 +5,9 @@
   align-items: center;
 
 
-  width: 64px;
+  width: 4rem;
   height: 100vh;
-  padding: 15px 0px;
+  padding: 1rem 0rem;
 
   border-right: 1px solid #2D2F2F;
 }
@@ -18,9 +18,9 @@
 }
 
 .iconsColumns button{
-  width: 40px;
-  height: 40px;
-  margin: 2px 0px;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: .25rem 0px;
   border: none;
   color: #A5A5A4;
   background-color: transparent;

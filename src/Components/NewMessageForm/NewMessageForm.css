@@ -9,9 +9,9 @@
   align-items: center;
 
   flex: 1;
-  height: 45px;
-  padding: 5px 15px;
-  margin: 0px 12px 12px 12px;
+  height: 2.75rem;
+  padding: .25rem 1rem;
+  margin: 0px .75rem .75rem .75rem;
   border: 1px solid #242626;
   border-radius: 20px;
 
@@ -29,20 +29,20 @@
   justify-content: center;
   align-items: center;
 
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .stickerIcon-container{
-  margin-right: 3px;
+  margin-right: .25rem;
 }
 
 .newMessage-inputForm{
   flex: 1;
-  margin-left: 5px;
+  margin-left: .25rem;
   outline: none;
   border: none;
-  font-size: 15px;
+  font-size: 1rem;
 
   background-color: transparent;
   color: #d1d7db;

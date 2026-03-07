@@ -2,12 +2,12 @@
 .chatHeader-container{
   display: flex;
 
-  gap: 10px;
+  gap: .75rem;
 }
 
 .chatHeader-container img{
-  width: 49px;
-  height: 49px;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
 }
 
