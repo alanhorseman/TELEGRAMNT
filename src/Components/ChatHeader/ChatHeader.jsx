@@ -1,7 +1,7 @@
 import './ChatHeader.css'
+import { useContext } from 'react';
 import { useNavigate } from 'react-router';
 import useWindowSize from '../../hooks/useWindowSize';
-import { useContext, useEffect } from 'react';
 import { ContactsContext } from '../../Context/ContactsContext';
 
 export default function ChatHeader({ contact_selected }) {

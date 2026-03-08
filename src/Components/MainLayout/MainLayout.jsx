@@ -10,7 +10,6 @@ export default function MainLayout() {
   const isMobile = useWindowSize();
   const { contact_selected } = useContext(ContactsContext);
 
-  console.log("LAYOUT - Mobile:", isMobile, " | Contacto:", contact_selected);
   return (
     <div className="asideMain-container">
       {(!isMobile || !contact_selected ) && (
