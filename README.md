@@ -214,7 +214,7 @@ export default function MainLayout() {
 
 ### 🧩 Explicación de la lógica
 
-De esta manera seguiría la lógica de los condicionales:
+Asi seguiría la lógica de los condicionales:
 
 **Escritorio:**
 Si estoy en escritorio, **siempre** se renderizan los *contactos* y el componente `<Outlet />` ya que:
