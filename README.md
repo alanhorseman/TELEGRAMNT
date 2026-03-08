@@ -222,4 +222,4 @@ Resulta que las rutas sí estaban cambiando, pero nunca se estaban actualizando 
 
 La solución en este caso fue sencilla. Agregué al `provider` de mi `<ContactsContext />` el *state* y su debido *setter* para ser llamado en `<ContactItem />` y `<ChatHeader />`.
 
-> **Aclaración:** Si esta aclaración está acá es porque todavía no terminé el responsive.
+> **Aclaración:** Si esta aclaración está acá es porque todavía no terminé el responsive, tamaño de tipograficas, y demas cosas de diseño.
