@@ -1,5 +1,5 @@
 import './ChatHeader.css'
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router';
 import useWindowSize from '../../hooks/useWindowSize';
 import { ContactsContext } from '../../Context/ContactsContext';
@@ -14,6 +14,18 @@ export default function ChatHeader({ contact_selected }) {
     setContact_selected(null);
     navigate('/');
   }
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape'){
+        handleBack();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {window.removeEventListener('keydown', handleKeyDown)};
+  }, [contact_selected]);
 
   return (
     <div className="chatHeader-container">

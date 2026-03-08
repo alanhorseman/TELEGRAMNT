@@ -24,24 +24,17 @@ const contacts = [
   },
   {
     id: 2,
-    name: 'Bojack Horseman',
+    name: 'Tú',
     last_time_connection: 'Hace 1 horas',
     profile_picture: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDJ5vtsJwnQQHGzSkAj0WbgZBH16X4MkrNwg&s',
     messages: [
       {
         id: 1,
-        text: 'Bojack?!',
+        text: 'nota: ignorar mensajes para hacerme ver importante y ocupado',
         send_by_me: true,
         create_at: '2024-01-27',
         is_read: true,
       },
-      {
-        id: 2,
-        text: 'Horseman obviamente!',
-        send_by_me: false,
-        create_at: '2024-01-28',
-        is_read: false,
-      }
     ]
   },
   {
