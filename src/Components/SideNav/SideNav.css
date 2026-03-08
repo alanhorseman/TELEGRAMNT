@@ -17,7 +17,7 @@
   flex-direction: column;
 }
 
-.phoneIcon{
+.callIcon{
   display: none;
 }
 
@@ -44,7 +44,7 @@
   .channelIcon{
     display: none;
   }
-  .phoneIcon{
+  .callIcon{
     display: block;
   }
   .navIcon-top{

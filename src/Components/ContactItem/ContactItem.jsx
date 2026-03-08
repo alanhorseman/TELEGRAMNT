@@ -4,8 +4,8 @@ import { useContext } from "react";
 import { ContactsContext } from "../../Context/ContactsContext";
 
 export default function ContactItem({ contact }) {
-
   const { setContact_selected } = useContext(ContactsContext);
+  const lastMessage = contact.messages.at(-1);
   
   return (
     <div className="contactInfo-container">
@@ -13,7 +13,10 @@ export default function ContactItem({ contact }) {
         <div className="contactInfo-imgContainer">
           <img src={contact.profile_picture} alt={contact.name} />
         </div>
-        <h3>{contact.name}</h3>
+        <div className="contactInfo-textContainer">
+          <h3>{contact.name}</h3>
+          <p className="lastMessage">{lastMessage ? lastMessage.text : ''}</p>
+        </div>
       </Link>
     </div>
   );

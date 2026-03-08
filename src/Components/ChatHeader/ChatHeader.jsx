@@ -3,6 +3,7 @@ import { useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router';
 import useWindowSize from '../../hooks/useWindowSize';
 import { ContactsContext } from '../../Context/ContactsContext';
+import LeftArrowIcon from '../Icons/LetfArrowIcon/LeftArrowIcon'
 
 export default function ChatHeader({ contact_selected }) {
   const isMobile = useWindowSize();
@@ -31,7 +32,7 @@ export default function ChatHeader({ contact_selected }) {
     <div className="chatHeader-container">
       {isMobile && (
         <button className='backBtn' onClick={handleBack}>
-          ←
+          <LeftArrowIcon />
         </button>
       )}
       <img src={contact_selected.profile_picture} alt={contact_selected.name} />
