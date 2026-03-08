@@ -212,6 +212,20 @@ export default function MainLayout() {
 }
 ```
 
+### 🧩 Explicación de la lógica
+
+De esta manera seguiría la lógica de los condicionales:
+
+**Escritorio:**
+Si estoy en escritorio, **siempre** se renderizan los *contactos* y el componente `<Outlet />` ya que:
+* Si `isMobile = false` *(estoy en Escritorio)*, lo niego `!isMobile = true` y siempre voy a entrar en ambos condicionales.
+* *Ya dependerá del `<Outlet />` si renderiza un chat o `<ChatEmptyState />`*
+
+**Mobile:**
+Ahora, si `isMobile = true` *(estoy en Mobile)*, lo niego `!isMobile = false` y ahora dependerá de si hay o no un contacto seleccionado  para entrar solo en 1 de los condicionales:
+* Si `contact_selected = false` *(**no** hay ningun contacto selecionado)*, lo niego `!contact_selected = true` y pasa por el primer condicional pero no por el segundo, mostrando unicamente los contactos.
+* En cambio si `contact_selected = true` *(**si** hay un contacto seleccionado)*, lo niego `!contact_selected = false`, no pasa por el primer condicional pero si por el segundo, mostrando el chat correspondiente.
+
 ---
 
 ### B.1 Actualización de Estados
@@ -221,5 +235,9 @@ Esto me generó otro problema, y es que cuando seleccionaba un contacto, el chat
 Resulta que las rutas sí estaban cambiando, pero nunca se estaban actualizando los estados, por lo que no pasaban los condicionales del `<MainLayout />` y no se renderizaban los componentes.
 
 La solución en este caso fue sencilla. Agregué al `provider` de mi `<ContactsContext />` el *state* y su debido *setter* para ser llamado en `<ContactItem />` y `<ChatHeader />`.
+
+# Conclusion
+
+Crear un clon de *Whatsapp* me gusto mucho y me fue muy útil para seguir entendiendo esta **nueva forma de ver problemas**, **desmenuzarlos** en su minima expresion, y **darle una solución**.
 
 > **Aclaración:** *Los iconos no tienen funcionalidad, son puramente visual. Por supuesto voy a agregarle funcionalidad en el futuro si quiero que esto sea parte de mi Portfolio*.
