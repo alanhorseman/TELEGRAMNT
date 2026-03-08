@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router";
-import MainLayout from "./Components/MainLayout/MainLayout";
 import HomeScreen from "./Screens/HomeScreen/HomeScreen";
-import ContactScreen from "./Screens/ContactScreen/ContactScreen";
+import MainLayout from "./Components/MainLayout/MainLayout";
 import ContactsContextProvider from "./Context/ContactsContext";
+import ContactScreen from "./Screens/ContactScreen/ContactScreen";
 
 function App() {
   return (

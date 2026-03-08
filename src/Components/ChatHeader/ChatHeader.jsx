@@ -1,9 +1,9 @@
-import './ChatHeader.css'
-import { useContext, useEffect } from 'react';
+import './ChatHeader.css';
 import { useNavigate } from 'react-router';
+import { useContext, useEffect } from 'react';
 import useWindowSize from '../../hooks/useWindowSize';
+import LeftArrowIcon from '../Icons/LetfArrowIcon/LeftArrowIcon';
 import { ContactsContext } from '../../Context/ContactsContext';
-import LeftArrowIcon from '../Icons/LetfArrowIcon/LeftArrowIcon'
 
 export default function ChatHeader({ contact_selected }) {
   const isMobile = useWindowSize();

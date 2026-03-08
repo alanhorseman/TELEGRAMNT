@@ -1,5 +1,5 @@
-import ChatEmptyState from "../../Components/ChatEmptyState/ChatEmptyState"
-import './HomeScreen.css'
+import './HomeScreen.css';
+import ChatEmptyState from "../../Components/ChatEmptyState/ChatEmptyState";
 
 export default function HomeScreen() {
   return (

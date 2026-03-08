@@ -1,11 +1,11 @@
-import ChatIcon from '../Icons/ChatIcon/ChatIcon'
-import StatusIcon from '../Icons/StatusIcon/StatusIcon'
-import ChannelsIcon from '../Icons/ChannelsIcon/ChannelsIcon'
-import CommunityIcon from '../Icons/CommunityIcon/CommunityIcon'
-import MediaIcon from '../Icons/MediaIcon/MediaIcon'
-import SettingsIcon from '../Icons/SettingsIcon/SettingsIcon'
-import './SideNav.css'
-import CallIcon from '../Icons/CallIcon/CallIcon'
+import './SideNav.css';
+import CallIcon from '../Icons/CallIcon/CallIcon';
+import ChatIcon from '../Icons/ChatIcon/ChatIcon';
+import MediaIcon from '../Icons/MediaIcon/MediaIcon';
+import StatusIcon from '../Icons/StatusIcon/StatusIcon';
+import ChannelsIcon from '../Icons/ChannelsIcon/ChannelsIcon';
+import SettingsIcon from '../Icons/SettingsIcon/SettingsIcon';
+import CommunityIcon from '../Icons/CommunityIcon/CommunityIcon';
 
 export default function SideNav() {
   return (

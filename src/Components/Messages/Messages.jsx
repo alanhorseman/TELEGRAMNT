@@ -1,4 +1,4 @@
-import './Messages.css'
+import './Messages.css';
 
 export default function Messages({ contact_selected }) {
   return (

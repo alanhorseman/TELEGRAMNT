@@ -1,6 +1,6 @@
-import { useSearchParams } from "react-router"
+import './SearchBar.css';
+import { useSearchParams } from "react-router";
 import SearchIcon from "../Icons/SearchIcon/SearchIcon";
-import './SearchBar.css'
 
 export default function SearchBar() {
   const [searchParams, setSearchParams] = useSearchParams();

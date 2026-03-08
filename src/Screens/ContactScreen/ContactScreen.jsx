@@ -3,8 +3,8 @@ import { useContext } from "react";
 import { useParams } from "react-router";
 import Messages from "../../Components/Messages/Messages";
 import { ContactsContext } from "../../Context/ContactsContext";
-import NewMessageForm from "../../Components/NewMessageForm/NewMessageForm";
 import ChatHeader from "../../Components/ChatHeader/ChatHeader";
+import NewMessageForm from "../../Components/NewMessageForm/NewMessageForm";
 
 export default function ContactScreen() {
   const { contacts } = useContext(ContactsContext);

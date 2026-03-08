@@ -1,8 +1,8 @@
+import './NewMessageForm.css';
 import { useContext } from "react";
+import AttachIcon from '../Icons/AttachIcon/AttachIcon';
+import StickerIcon from '../Icons/StickerIcon/StickerIcon';
 import { ContactsContext } from "../../Context/ContactsContext";
-import AttachIcon from '../Icons/AttachIcon/AttachIcon'
-import StickerIcon from '../Icons/StickerIcon/StickerIcon'
-import './NewMessageForm.css'
 
 export default function NewMessageForm({ contact_id }) {
   const { addNewMessage } = useContext(ContactsContext);

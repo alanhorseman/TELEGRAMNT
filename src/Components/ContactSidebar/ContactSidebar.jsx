@@ -1,4 +1,4 @@
-import './ContactSidebar.css'
+import './ContactSidebar.css';
 import { useContext } from "react";
 import { useSearchParams } from "react-router";
 import SearchBar from "../SearchBar/SearchBar";

@@ -1,7 +1,6 @@
-import React from 'react'
-import NewChatIcon from '../Icons/NewChatIcon/NewChatIcon'
-import MenuIcon from '../Icons/MenuIcon/MenuIcon'
-import './SidebarHeader.css'
+import './SidebarHeader.css';
+import MenuIcon from '../Icons/MenuIcon/MenuIcon';
+import NewChatIcon from '../Icons/NewChatIcon/NewChatIcon';
 
 export default function SidebarHeader() {
   return (

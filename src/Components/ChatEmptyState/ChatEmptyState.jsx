@@ -1,4 +1,4 @@
-import './ChatEmptyState.css'
+import './ChatEmptyState.css';
 
 export default function ChatEmptyState() {
   return (

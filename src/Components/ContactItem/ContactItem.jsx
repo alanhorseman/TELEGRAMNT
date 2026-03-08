@@ -1,6 +1,6 @@
-import { Link } from "react-router";
-import './ContactItem.css'
+import './ContactItem.css';
 import { useContext } from "react";
+import { Link } from "react-router";
 import { ContactsContext } from "../../Context/ContactsContext";
 
 export default function ContactItem({ contact }) {
