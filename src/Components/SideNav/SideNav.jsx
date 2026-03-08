@@ -5,6 +5,7 @@ import CommunityIcon from '../Icons/CommunityIcon/CommunityIcon'
 import MediaIcon from '../Icons/MediaIcon/MediaIcon'
 import SettingsIcon from '../Icons/SettingsIcon/SettingsIcon'
 import './SideNav.css'
+import PhoneIcon from '../Icons/PhoneIcon/PhoneIcon'
 
 export default function SideNav() {
   return (
@@ -12,8 +13,9 @@ export default function SideNav() {
       <div className='navIcon-top iconsColumns'>
         <button><ChatIcon /></button>
         <button><StatusIcon /></button>
-        <button><ChannelsIcon /></button>
+        <button className='channelIcon'><ChannelsIcon /></button>
         <button><CommunityIcon /></button>
+        <button className='phoneIcon'><PhoneIcon /></button>
       </div>
       <div className='navIcon-bottom iconsColumns'>
         <button><MediaIcon /></button>

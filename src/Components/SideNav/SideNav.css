@@ -17,6 +17,10 @@
   flex-direction: column;
 }
 
+.phoneIcon{
+  display: none;
+}
+
 .iconsColumns button{
   width: 2.5rem;
   height: 2.5rem;
@@ -26,4 +30,31 @@
   
   color: #A5A5A4;
   background-color: transparent;
+}
+
+@media (max-width: 26.5625rem){
+  .aside-navIconContainer{
+    flex-direction: row;
+
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-top: 1px solid #2D2F2F;
+  }
+  .channelIcon{
+    display: none;
+  }
+  .phoneIcon{
+    display: block;
+  }
+  .navIcon-top{
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .navIcon-bottom{
+    display: none;
+  }
+  .iconsColumns{
+    flex-direction: row;
+  }
 }

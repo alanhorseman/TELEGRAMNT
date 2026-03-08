@@ -57,3 +57,13 @@
     border-left: none;
   }
 }
+
+@media (max-width: 26.5625rem){
+  .asideMain-container{
+    flex-direction: column-reverse;
+  }
+
+  .aside-navBtn{
+    flex-direction: row;
+  }
+}
