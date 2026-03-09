@@ -13,7 +13,7 @@ export default function ContactScreen() {
     (contact) => Number(contact.id) === Number(contact_id),
   );
   return (
-    <div>
+    <div className="test1">
       {!contact_selected ? (
         <div>
           <h1>El contacto no existe</h1>
@@ -23,11 +23,14 @@ export default function ContactScreen() {
           <div className="contactScreen-chatHeader-container">
             <ChatHeader contact_selected={contact_selected}/>
           </div>
-          <div className="contactScren-messagesContainer">
-            <Messages contact_selected={contact_selected} />
-          </div>
-          <div className="contactScreen-newMessageForm">
-            <NewMessageForm contact_id={contact_id} />
+          <div>
+
+            <div className="contactScren-messagesContainer">
+              <Messages contact_selected={contact_selected} />
+            </div>
+            <div className="contactScreen-newMessageForm">
+              <NewMessageForm contact_id={contact_id} />
+            </div>
           </div>
         </div>
       )}
