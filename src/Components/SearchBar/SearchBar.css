@@ -10,6 +10,10 @@
   background-color: #2D2F2F;
 }
 
+.searchBar-container:focus-within {
+  box-shadow: 0 0 0 2px #21C063;
+}
+
 .searchIcon{
   display: flex;
   
