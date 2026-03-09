@@ -23,9 +23,8 @@ export default function ContactScreen() {
           <div className="contactScreen-chatHeader-container">
             <ChatHeader contact_selected={contact_selected}/>
           </div>
-          <div>
-
-            <div className="contactScren-messagesContainer">
+          <div className="contactScreen-body">
+            <div className="contactScreen-messagesContainer">
               <Messages contact_selected={contact_selected} />
             </div>
             <div className="contactScreen-newMessageForm">
