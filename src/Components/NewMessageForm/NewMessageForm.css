@@ -55,3 +55,9 @@
 .submitBtn{
   display: none;
 }
+
+@media (max-width: 346px) {
+  .newMessage-inputContainer{
+    margin: 0px;
+  }
+}

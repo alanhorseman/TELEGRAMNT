@@ -13,7 +13,7 @@ export default function ContactScreen() {
     (contact) => Number(contact.id) === Number(contact_id),
   );
   return (
-    <div className="test1">
+    <div>
       {!contact_selected ? (
         <div>
           <h1>El contacto no existe</h1>
