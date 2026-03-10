@@ -1,31 +1,38 @@
 import "./MainLayout.css";
 import { useContext } from "react";
-import { Outlet } from "react-router";
+import { Outlet, useLocation } from "react-router";
 import SideNav from "../SideNav/SideNav";
 import useWindowSize from "../../hooks/useWindowSize";
 import ContactSidebar from "../ContactSidebar/ContactSidebar";
 import { ContactsContext } from "../../Context/ContactsContext";
+import SettingsScreen from "../../Screens/SettingsScreen/SettingsScreen";
+import ContactScreen from "../../Screens/ContactScreen/ContactScreen";
 
 export default function MainLayout() {
   const isMobile = useWindowSize();
   const { contact_selected } = useContext(ContactsContext);
+  const { pathname } = useLocation();
+
+  const isSettings = pathname.startsWith('/settings');
+
 
   return (
     <div className="asideMain-container">
-      {(!isMobile || !contact_selected ) && (
+      {(!isMobile || (!contact_selected && !isSettings) ) && (
         <>
           <aside className="aside-navBtn">
             <SideNav />
           </aside>
 
           <aside className="aside-contacts">
+            {/* {!isSettings ? (<SettingsScreen />) : (<ContactSidebar />)} */}
             <ContactSidebar />
             <div className="line-bottom"></div>
-          </aside>  
+          </aside>
         </>
       )}
 
-      {(!isMobile || contact_selected) && (
+      {(!isMobile || contact_selected || isSettings) && (
         <main className="main">
           <Outlet />
         </main>

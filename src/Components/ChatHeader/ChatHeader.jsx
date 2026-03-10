@@ -30,11 +30,9 @@ export default function ChatHeader({ contact_selected }) {
 
   return (
     <div className="chatHeader-container">
-      {isMobile && (
-        <button className='backBtn' onClick={handleBack}>
-          <LeftArrowIcon />
-        </button>
-      )}
+      <button className='backBtn' onClick={handleBack}>
+        <LeftArrowIcon />
+      </button>
       <img src={contact_selected.profile_picture} alt={contact_selected.name} />
       <div className='chatHeader-infoContact'>
         <h3>{contact_selected.name}</h3>
