@@ -1,10 +1,9 @@
-import React from 'react'
+import './SettingsScreen.css'
 
 export default function SettingsScreen() {
   return (
     <>
-      <div>SettingsScreen</div>
-      {console.log('llego hasta aca')}
+      <div className='settingsScreen-emptyState'>SettingsScreen derecha</div>
     </>
   )
 }

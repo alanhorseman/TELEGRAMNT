@@ -1,0 +1,67 @@
+.switch-row {
+  display: flex;
+  align-items: flex-start; /* Alineado arriba por la descripción larga */
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.switch-row:hover {
+  background-color: #202c33;
+}
+
+.switch-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.switch-title {
+  color: #e9edef;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.switch-description {
+  color: #8696a0;
+  font-size: 13px;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
+/* El camino del Switch */
+.switch-track {
+  width: 32px;
+  height: 14px;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 10px; /* Centrado visual con el título */
+  transition: background-color 0.2s;
+}
+
+/* Colores del track según estado */
+.switch-track.off { background-color: #8696a0; }
+.switch-track.on { background-color: rgba(0, 168, 132, 0.5); }
+
+/* La bolita del Switch */
+.switch-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: -3px;
+  left: -2px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+/* Posición y color de la bolita según estado */
+.switch-track.off .switch-thumb {
+  background-color: #ced5d8;
+  transform: translateX(0);
+}
+
+.switch-track.on .switch-thumb {
+  background-color: #00a884; /* Verde WhatsApp */
+  transform: translateX(18px);
+}

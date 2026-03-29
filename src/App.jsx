@@ -11,8 +11,8 @@ function App() {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<HomeScreen />} />
+          <Route path="settings/*" element={<SettingsScreen />}/>
           <Route path="contact/:contact_id" element={<ContactScreen />} />
-          <Route path="settings" element={<SettingsScreen />}/>
         </Route>
       </Routes>
     </ContactsContextProvider>

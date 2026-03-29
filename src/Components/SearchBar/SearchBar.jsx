@@ -2,7 +2,7 @@ import './SearchBar.css';
 import { useSearchParams } from "react-router";
 import SearchIcon from "../Icons/SearchIcon/SearchIcon";
 
-export default function SearchBar() {
+export default function SearchBar({placeholder}) {
   const [searchParams, setSearchParams] = useSearchParams();
 
   const query = searchParams.get('q') || '';
@@ -22,7 +22,7 @@ export default function SearchBar() {
         <div className="searchIcon">
           <SearchIcon />
         </div>
-        <input className="inputSearchBar" type="text" placeholder="Buscar un chat o iniciar uno nuevo" value={query} onChange={handleChange} />
+        <input className="inputSearchBar" type="text" placeholder={placeholder} value={query} onChange={handleChange} />
       </div>  
     </div>
   )

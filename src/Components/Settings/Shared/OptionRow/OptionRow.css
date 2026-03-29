@@ -1,0 +1,35 @@
+.optionRow {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.optionRow:hover {
+  background-color: #202c33;
+}
+
+.optionIcon {
+  margin-right: 20px;
+  color: #8696a0;
+  display: flex;
+  align-items: center;
+}
+
+.optionText {
+  flex: 1;
+}
+
+.optionTitle {
+  color: #e9edef;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.optionDescription {
+  color: #8696a0;
+  font-size: 13px;
+  margin: 4px 0 0 0;
+}
